@@ -4,6 +4,7 @@ import Dan from "../media/dan.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import StockPhotoTest from "../media/StockPhotoTest.png";
 
 const Header = styled.div`
   height: 80px;
@@ -168,6 +169,11 @@ const BoxBottom = styled.div`
   height: 67%;
   width: 100%;
   background-color: pink;
+
+  .pic {
+        width: '100%',
+        height: '100%',
+  }
 `;
 
 const Footer = styled.div`
@@ -215,7 +221,9 @@ const MainSection = () => {
         <MiddleBottom>
           <Boxes>
             <BoxTitle>Beet Juice</BoxTitle>
-            <BoxBottom></BoxBottom>
+            <BoxBottom className="pic">
+              <img src={StockPhotoTest} />
+            </BoxBottom>
           </Boxes>
           <Boxes>
             <BoxTitle>Telehealth Portal</BoxTitle>
