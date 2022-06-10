@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import Dan from "../media/dan.png";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Header = styled.div`
   height: 80px;
@@ -64,7 +67,7 @@ const TextBox = styled.div`
 
   .wording2 {
     font-size: 20px,
-     padding-top: 45px;
+    padding-top: 45px;
   }
 `;
 
@@ -182,9 +185,9 @@ const MainSection = () => {
       <Header>
         <HeaderLeft></HeaderLeft>
         <HeaderRight>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
+          <LinkedInIcon />
+          <InstagramIcon />
+          <GitHubIcon />
         </HeaderRight>
       </Header>
       <Top>
