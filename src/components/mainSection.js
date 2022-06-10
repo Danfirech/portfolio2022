@@ -11,12 +11,16 @@ const Header = styled.div`
 
 const HeaderLeft = styled.div`
   height: 100%;
-  width: 50%;
+  width: 80%;
+  display: flex;
 `;
 
 const HeaderRight = styled.div`
   height: 100%;
-  width: 50%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 `;
 
 const Top = styled.div`
@@ -30,7 +34,7 @@ const BlueLine = styled.div`
   height: 70px;
   width: 100%;
   background-color: #016c8c;
-  z-index: 99;
+  z-index: 98;
   position: absolute;
   margin-top: 300px;
 `;
@@ -50,6 +54,18 @@ const TextBox = styled.div`
   width: 80%;
   background-color: white;
   margin-left: 100px;
+
+
+  .wording1 {
+    font-size: 50px;
+        z-index: 99;
+
+  }
+
+  .wording2 {
+    font-size: 20px,
+     padding-top: 45px;
+  }
 `;
 
 const TopRight = styled.div`
@@ -92,93 +108,23 @@ const Middle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 1068px) {
+    display: flex;
+    flex-direction: column;
+    height: 1300px;
+  }
 `;
 
 const MiddleTop = styled.div`
   height: 50%;
   width: 50%;
   background-color: white;
+  display: flex;
   justify-content: center;
   align-items: center;
 
   .words {
     font-size: 40px;
-  }
-
-  /* Pretty Stuff? */
-  html {
-    background: #011f2a;
-  }
-
-  .things > .content {
-    float: left;
-    width: 50%;
-    height: 500px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: relative;
-  }
-
-  .things > .content h1 {
-    font-family: "Arial", sans-serif;
-    text-transform: uppercase;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    position: absolute;
-    height: 150px;
-    color: black;
-  }
-
-  /* Arrow */
-
-  .arrow {
-    position: relative;
-    margin: 0 auto;
-    width: 100px;
-  }
-
-  .arrow .curve {
-    border: 2px solid #be5f4b;
-    border-color: transparent transparent transparent black;
-    height: 360px;
-    width: 1200px;
-    border-radius: 230px 0 0 150px;
-  }
-
-  .arrow .point {
-    position: absolute;
-    left: 40px;
-    top: 315px;
-  }
-
-  .arrow .point:before,
-  .arrow .point:after {
-    border: 1px solid black;
-    height: 25px;
-    content: "";
-    position: absolute;
-  }
-
-  .arrow .point:before {
-    top: -11px;
-    left: -11px;
-    transform: rotate(-74deg);
-    -webkit-transform: rotate(-74deg);
-    -moz-transform: rotate(-74deg);
-    -ms-transform: rotate(-74deg);
-  }
-
-  .arrow .point:after {
-    top: -20px;
-    left: 5px;
-    transform: rotate(12deg);
-    -webkit-transform: rotate(12deg);
-    -moz-transform: rotate(12deg);
-    -ms-transform: rotate(12deg);
   }
 `;
 
@@ -189,6 +135,12 @@ const MiddleBottom = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 1068px) {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+  }
 `;
 
 const Boxes = styled.div`
@@ -227,15 +179,20 @@ const Footer = styled.div`
 const MainSection = () => {
   return (
     <>
-      <Header></Header>
+      <Header>
+        <HeaderLeft></HeaderLeft>
+        <HeaderRight>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </HeaderRight>
+      </Header>
       <Top>
         <BlueLine></BlueLine>
         <TopLeft>
           <TextBox>
-            <h1 style={{ fontSize: 50 }}>
-              Designer By Day, Drummer By Night....
-            </h1>
-            <h1 style={{ fontSize: 20, paddingTop: 45 }}>
+            <h1 className="wording1">Designer By Day, Drummer By Night....</h1>
+            <h1 className="wording2">
               I create simple, clean, user friendly web applications.
             </h1>
           </TextBox>
@@ -250,17 +207,7 @@ const MainSection = () => {
       </Top>
       <Middle>
         <MiddleTop>
-          <div class="things">
-            <div class="content">
-              <div class="arrow">
-                <div class="curve"></div>
-                <div class="point"></div>
-              </div>
-            </div>
-            <div class="content">
-              <h1>Check out my most recent projects!</h1>
-            </div>
-          </div>
+          <div className="words">Check out my most current projects!</div>
         </MiddleTop>
         <MiddleBottom>
           <Boxes>
