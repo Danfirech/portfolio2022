@@ -62,7 +62,8 @@ const TextBox = styled.div`
 
   .wording1 {
     font-size: 50px;
-        z-index: 99;
+        z-index: 100;
+       
 
   }
 
@@ -113,14 +114,12 @@ const Middle = styled.div`
   flex-direction: column;
   align-items: center;
   @media (max-width: 1068px) {
-    display: flex;
-    flex-direction: column;
     height: 1300px;
   }
 `;
 
 const MiddleTop = styled.div`
-  height: 50%;
+  height: 200px;
   width: 50%;
   background-color: white;
   display: flex;
@@ -129,11 +128,14 @@ const MiddleTop = styled.div`
 
   .words {
     font-size: 40px;
+    @media (max-width: 1068px) {
+      margin-bottom: 50px;
+    }
   }
 `;
 
 const MiddleBottom = styled.div`
-  height: 70%;
+  height: 700px;
   width: 100%;
   background-color: white;
   display: flex;
@@ -143,7 +145,8 @@ const MiddleBottom = styled.div`
   @media (max-width: 1068px) {
     display: flex;
     flex-direction: column;
-    height: 700px;
+    margin-bottom: 20px;
+    height: 1900px;
   }
 `;
 
@@ -154,6 +157,11 @@ const Boxes = styled.div`
   margin-left: 7%;
   margin-right: 7%;
   border: 1px solid grey;
+
+  @media (max-width: 1068px) {
+    margin-bottom: 20px;
+    width: 40%;
+  }
 `;
 
 const BoxTitle = styled.div`
@@ -171,8 +179,6 @@ const BoxBottom = styled.div`
   background-color: pink;
 
   .pic {
-        width: '100%',
-        height: '100%',
   }
 `;
 
@@ -221,9 +227,7 @@ const MainSection = () => {
         <MiddleBottom>
           <Boxes>
             <BoxTitle>Beet Juice</BoxTitle>
-            <BoxBottom className="pic">
-              <img src={StockPhotoTest} />
-            </BoxBottom>
+            <BoxBottom></BoxBottom>
           </Boxes>
           <Boxes>
             <BoxTitle>Telehealth Portal</BoxTitle>
