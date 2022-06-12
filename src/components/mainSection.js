@@ -213,6 +213,11 @@ const BoxTitle = styled.div`
   align-items: center;
   font-size: 25px;
   font-family: "Lora", serif;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 `;
 
 const BoxBottom = styled.div`
@@ -280,21 +285,57 @@ const MainSection = () => {
         </MiddleTop>
         <MiddleBottom>
           <Boxes>
-            <BoxTitle>Beet Juice</BoxTitle>
+            <BoxTitle>
+              <a
+                href="https://javscriptscroll.netlify.app"
+                target="https://javscriptscroll.netlify.app"
+              >
+                Beet Juice
+              </a>
+            </BoxTitle>
             <BoxBottom>
-              <img className="pic" src={BeetJuice} />
+              <a
+                href="https://javscriptscroll.netlify.app"
+                target="https://javscriptscroll.netlify.app"
+              >
+                <img className="pic" src={BeetJuice} />
+              </a>
             </BoxBottom>
           </Boxes>
           <Boxes>
-            <BoxTitle>Telehealth Portal</BoxTitle>
+            <BoxTitle>
+              <a
+                href="https://javscriptscroll.netlify.app"
+                target="https://javscriptscroll.netlify.app"
+              >
+                Telehealth Portal
+              </a>
+            </BoxTitle>
             <BoxBottom>
-              <img className="pic" src={TeleHealth} />
+              <a
+                href="https://javscriptscroll.netlify.app"
+                target="https://javscriptscroll.netlify.app"
+              >
+                <img className="pic" src={TeleHealth} />
+              </a>
             </BoxBottom>
           </Boxes>
           <Boxes>
-            <BoxTitle>Landing Page</BoxTitle>
+            <BoxTitle>
+              <a
+                href="https://javscriptscroll.netlify.app"
+                target="https://javscriptscroll.netlify.app"
+              >
+                Landing Page
+              </a>
+            </BoxTitle>
             <BoxBottom>
-              <img className="pic" src={CovidSite} />
+              <a
+                href="https://javscriptscroll.netlify.app"
+                target="https://javscriptscroll.netlify.app"
+              >
+                <img className="pic" src={CovidSite} />
+              </a>
             </BoxBottom>
           </Boxes>
         </MiddleBottom>
