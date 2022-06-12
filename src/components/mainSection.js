@@ -6,11 +6,14 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import StockPhotoTest from "../media/StockPhotoTest.png";
 import CopyrightIcon from "@mui/icons-material/Copyright";
+import BeetJuice from "../media/beetJuice.png";
+import TeleHealth from "../media/telehealth.png";
+import CovidSite from "../media/covidsite.png";
 
 const Header = styled.div`
   height: 80px;
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #cccccc;
   display: flex;
 `;
 
@@ -171,7 +174,7 @@ const MiddleTop = styled.div`
 `;
 
 const MiddleBottom = styled.div`
-  height: 700px;
+  height: 500px;
   width: 100%;
   background-color: white;
   display: flex;
@@ -187,12 +190,13 @@ const MiddleBottom = styled.div`
 `;
 
 const Boxes = styled.div`
-  height: 70%;
-  width: 20%;
+  height: 65%;
+  width: 18%;
   background-color: white;
   margin-left: 7%;
   margin-right: 7%;
-  border: 1px solid grey;
+  border: 2px solid #cccccc;
+  border-radius: 5px;
 
   @media (max-width: 1068px) {
     margin-bottom: 20px;
@@ -207,12 +211,15 @@ const BoxTitle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 25px;
+  font-family: "Lora", serif;
 `;
 
 const BoxBottom = styled.div`
   height: 67%;
   width: 100%;
   background-color: white;
+  border-top: 1px solid #cccccc;
 
   .pic {
     width: 100%;
@@ -223,10 +230,11 @@ const BoxBottom = styled.div`
 const Footer = styled.div`
   height: 80px;
   width: 100%;
-  border-top: 1px solid black;
+  border-top: 1px solid #cccccc;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Lora", serif;
 
   @media (max-width: 1068px) {
     display: none;
@@ -274,19 +282,19 @@ const MainSection = () => {
           <Boxes>
             <BoxTitle>Beet Juice</BoxTitle>
             <BoxBottom>
-              <img className="pic" src={StockPhotoTest} />
+              <img className="pic" src={BeetJuice} />
             </BoxBottom>
           </Boxes>
           <Boxes>
             <BoxTitle>Telehealth Portal</BoxTitle>
             <BoxBottom>
-              <img className="pic" src={StockPhotoTest} />
+              <img className="pic" src={TeleHealth} />
             </BoxBottom>
           </Boxes>
           <Boxes>
-            <BoxTitle></BoxTitle>
+            <BoxTitle>Landing Page</BoxTitle>
             <BoxBottom>
-              <img className="pic" src={StockPhotoTest} />
+              <img className="pic" src={CovidSite} />
             </BoxBottom>
           </Boxes>
         </MiddleBottom>
