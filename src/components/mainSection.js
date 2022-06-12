@@ -18,6 +18,7 @@ const HeaderLeft = styled.div`
   height: 100%;
   width: 80%;
   display: flex;
+  align-items: center;
 `;
 
 const HeaderRight = styled.div`
@@ -46,9 +47,13 @@ const BlueLine = styled.div`
   width: 100%;
   background-color: #016c8c;
   position: absolute;
-  margin-top: 300px;
+  margin-top: 270px;
   margin-right: 100px;
   z-index: 1;
+
+  @media (max-width: 1068px) {
+    margin-top: 840px;
+  }
 `;
 
 const TopLeft = styled.div`
@@ -64,7 +69,7 @@ const TopLeft = styled.div`
 const TextBox = styled.div`
   height: 60%;
   width: 100%;
-  background-color: pink;
+  background-color: white;
   margin-right: 100px;
   margin-left: 100px;
 
@@ -74,6 +79,9 @@ const TextBox = styled.div`
     margin-top: 30px;
     position: relative;
     font-family: "Lora", serif;
+    @media (max-width: 1068px) {
+      font-size: 40px;
+    }
   }
 
   .wording2 {
@@ -82,6 +90,9 @@ const TextBox = styled.div`
     z-index: 99;
     position: relative;
     font-family: "Lora", serif;
+    @media (max-width: 1068px) {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -97,10 +108,13 @@ const TopRight = styled.div`
 const BlueBox = styled.div`
   height: 80%;
   width: 50%;
-  background-color: pink;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1068px) {
+  }
 `;
 
 const ImageBox = styled.div`
@@ -111,9 +125,8 @@ const ImageBox = styled.div`
   align-items: center;
 
   @media (max-width: 1068px) {
-    height: 1300px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    height: 700px;
+    margin-left: 250px;
   }
 
   img {
@@ -147,9 +160,12 @@ const MiddleTop = styled.div`
 
   .words {
     font-size: 40px;
+    font-family: "Lora", serif;
     @media (max-width: 1068px) {
-      padding-bottom: 50px;
+      padding-bottom: 150px;
       margin-top: 100px;
+      font-size: 40px;
+      margin-left: 20px;
     }
   }
 `;
@@ -180,7 +196,7 @@ const Boxes = styled.div`
 
   @media (max-width: 1068px) {
     margin-bottom: 20px;
-    width: 40%;
+    width: 60%;
   }
 `;
 
@@ -196,7 +212,7 @@ const BoxTitle = styled.div`
 const BoxBottom = styled.div`
   height: 67%;
   width: 100%;
-  background-color: pink;
+  background-color: white;
 
   .pic {
     width: 100%;
@@ -221,7 +237,9 @@ const MainSection = () => {
   return (
     <>
       <Header>
-        <HeaderLeft></HeaderLeft>
+        <HeaderLeft>
+          <div>Welcome! My name is Dan</div>
+        </HeaderLeft>
         <HeaderRight>
           <LinkedInIcon />
           <InstagramIcon />
