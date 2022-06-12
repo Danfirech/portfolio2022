@@ -5,6 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import StockPhotoTest from "../media/StockPhotoTest.png";
+import CopyrightIcon from "@mui/icons-material/Copyright";
 
 const Header = styled.div`
   height: 80px;
@@ -32,15 +33,22 @@ const Top = styled.div`
   width: 100%;
   background-color: white;
   display: flex;
+
+  @media (max-width: 1068px) {
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const BlueLine = styled.div`
   height: 70px;
   width: 100%;
   background-color: #016c8c;
-  z-index: 98;
   position: absolute;
   margin-top: 300px;
+  margin-right: 100px;
+  z-index: 1;
 `;
 
 const TopLeft = styled.div`
@@ -55,21 +63,25 @@ const TopLeft = styled.div`
 
 const TextBox = styled.div`
   height: 60%;
-  width: 80%;
-  background-color: white;
+  width: 100%;
+  background-color: pink;
+  margin-right: 100px;
   margin-left: 100px;
 
-
   .wording1 {
-    font-size: 50px;
-        z-index: 100;
-       
-
+    font-size: 70px;
+    z-index: 99;
+    margin-top: 30px;
+    position: relative;
+    font-family: "Lora", serif;
   }
 
   .wording2 {
-    font-size: 20px,
+    font-size: 20px;
     padding-top: 45px;
+    z-index: 99;
+    position: relative;
+    font-family: "Lora", serif;
   }
 `;
 
@@ -85,7 +97,7 @@ const TopRight = styled.div`
 const BlueBox = styled.div`
   height: 80%;
   width: 50%;
-  background-color: white;
+  background-color: pink;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,6 +109,12 @@ const ImageBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1068px) {
+    height: 1300px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
 
   img {
     height: 700px;
@@ -113,6 +131,7 @@ const Middle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
   @media (max-width: 1068px) {
     height: 1300px;
   }
@@ -129,7 +148,8 @@ const MiddleTop = styled.div`
   .words {
     font-size: 40px;
     @media (max-width: 1068px) {
-      margin-bottom: 50px;
+      padding-bottom: 50px;
+      margin-top: 100px;
     }
   }
 `;
@@ -179,6 +199,8 @@ const BoxBottom = styled.div`
   background-color: pink;
 
   .pic {
+    width: 100%;
+    height: 100%;
   }
 `;
 
@@ -189,6 +211,10 @@ const Footer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1068px) {
+    display: none;
+  }
 `;
 
 const MainSection = () => {
@@ -202,14 +228,16 @@ const MainSection = () => {
           <GitHubIcon />
         </HeaderRight>
       </Header>
+      <BlueLine></BlueLine>
       <Top>
-        <BlueLine></BlueLine>
         <TopLeft>
           <TextBox>
-            <h1 className="wording1">Designer By Day, Drummer By Night....</h1>
-            <h1 className="wording2">
+            <div className="wording1">
+              Designer By Day, Drummer By Night....
+            </div>
+            <div className="wording2">
               I create simple, clean, user friendly web applications.
-            </h1>
+            </div>
           </TextBox>
         </TopLeft>
         <TopRight>
@@ -227,19 +255,26 @@ const MainSection = () => {
         <MiddleBottom>
           <Boxes>
             <BoxTitle>Beet Juice</BoxTitle>
-            <BoxBottom></BoxBottom>
+            <BoxBottom>
+              <img className="pic" src={StockPhotoTest} />
+            </BoxBottom>
           </Boxes>
           <Boxes>
             <BoxTitle>Telehealth Portal</BoxTitle>
-            <BoxBottom></BoxBottom>
+            <BoxBottom>
+              <img className="pic" src={StockPhotoTest} />
+            </BoxBottom>
           </Boxes>
           <Boxes>
             <BoxTitle></BoxTitle>
-            <BoxBottom></BoxBottom>
+            <BoxBottom>
+              <img className="pic" src={StockPhotoTest} />
+            </BoxBottom>
           </Boxes>
         </MiddleBottom>
       </Middle>
       <Footer>
+        <CopyrightIcon />
         <div>DanPossehlDesign</div>
       </Footer>
     </>
