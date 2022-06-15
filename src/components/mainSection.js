@@ -287,8 +287,8 @@ const MainSection = () => {
           <Boxes>
             <BoxTitle>
               <a
-                href="https://javscriptscroll.netlify.app"
-                target="https://javscriptscroll.netlify.app"
+                href="https://www.bookb33tju1c3.com/"
+                target="https://www.bookb33tju1c3.com/"
               >
                 Beet Juice
               </a>
@@ -305,8 +305,8 @@ const MainSection = () => {
           <Boxes>
             <BoxTitle>
               <a
-                href="https://javscriptscroll.netlify.app"
-                target="https://javscriptscroll.netlify.app"
+                href="git@github.com:Danfirech/covid-landingpage.git"
+                target="git@github.com:Danfirech/covid-landingpage.git"
               >
                 Telehealth Portal
               </a>
