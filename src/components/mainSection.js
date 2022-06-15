@@ -191,7 +191,7 @@ const MiddleBottom = styled.div`
 
 const Boxes = styled.div`
   height: 65%;
-  width: 18%;
+  width: 16%;
   background-color: white;
   margin-left: 7%;
   margin-right: 7%;
@@ -254,9 +254,24 @@ const MainSection = () => {
           <div>Welcome! My name is Dan</div>
         </HeaderLeft>
         <HeaderRight>
-          <LinkedInIcon />
-          <InstagramIcon />
-          <GitHubIcon />
+          <a
+            href="https://www.linkedin.com/in/dan-possehl/"
+            target="https://www.linkedin.com/in/dan-possehl/"
+          >
+            <LinkedInIcon />
+          </a>
+          <a
+            href="https://www.instagram.com/danielpossehl/?hl=en"
+            target="https://www.instagram.com/danielpossehl/?hl=en"
+          >
+            <InstagramIcon />
+          </a>
+          <a
+            href="https://github.com/Danfirech"
+            target="https://github.com/Danfirech"
+          >
+            <GitHubIcon />
+          </a>
         </HeaderRight>
       </Header>
       <BlueLine></BlueLine>
