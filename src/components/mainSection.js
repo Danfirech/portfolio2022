@@ -22,6 +22,8 @@ const HeaderLeft = styled.div`
   width: 80%;
   display: flex;
   align-items: center;
+  padding-left: 25px;
+  font-family: "Lora", serif;
 `;
 
 const HeaderRight = styled.div`
@@ -30,6 +32,11 @@ const HeaderRight = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  color: black;
+
+  .icons {
+    color: black;
+  }
 `;
 
 const Top = styled.div`
@@ -190,8 +197,8 @@ const MiddleBottom = styled.div`
 `;
 
 const Boxes = styled.div`
-  height: 65%;
-  width: 16%;
+  height: 55%;
+  width: 19%;
   background-color: white;
   margin-left: 7%;
   margin-right: 7%;
@@ -251,22 +258,25 @@ const MainSection = () => {
     <>
       <Header>
         <HeaderLeft>
-          <div>Welcome! My name is Dan</div>
+          <div>I'm Dan! Nice to Meet you!</div>
         </HeaderLeft>
         <HeaderRight>
           <a
+            className="icons"
             href="https://www.linkedin.com/in/dan-possehl/"
             target="https://www.linkedin.com/in/dan-possehl/"
           >
             <LinkedInIcon />
           </a>
           <a
+            className="icons"
             href="https://www.instagram.com/danielpossehl/?hl=en"
             target="https://www.instagram.com/danielpossehl/?hl=en"
           >
             <InstagramIcon />
           </a>
           <a
+            className="icons"
             href="https://github.com/Danfirech"
             target="https://github.com/Danfirech"
           >
