@@ -37,6 +37,10 @@ const HeaderRight = styled.div`
   .icons {
     color: black;
   }
+
+  @media (max-width: 1068px) {
+    margin-right: 40px;
+  }
 `;
 
 const Top = styled.div`
@@ -137,6 +141,7 @@ const ImageBox = styled.div`
   @media (max-width: 1068px) {
     height: 700px;
     margin-left: 250px;
+    margin-bottom: 100px;
   }
 
   img {
@@ -172,10 +177,11 @@ const MiddleTop = styled.div`
     font-size: 40px;
     font-family: "Lora", serif;
     @media (max-width: 1068px) {
-      padding-bottom: 150px;
+      padding-bottom: 200px;
       margin-top: 100px;
       font-size: 40px;
       margin-left: 20px;
+      height: 300px;
     }
   }
 `;
@@ -207,7 +213,7 @@ const Boxes = styled.div`
 
   @media (max-width: 1068px) {
     margin-bottom: 20px;
-    width: 60%;
+    width: 80%;
   }
 `;
 
@@ -306,7 +312,7 @@ const MainSection = () => {
       </Top>
       <Middle>
         <MiddleTop>
-          <div className="words">Check out my most current projects!</div>
+          <div className="words">Check out my most recent projects!</div>
         </MiddleTop>
         <MiddleBottom>
           <Boxes>
