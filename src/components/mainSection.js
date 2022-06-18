@@ -326,8 +326,8 @@ const MainSection = () => {
             </BoxTitle>
             <BoxBottom>
               <a
-                href="https://javscriptscroll.netlify.app"
-                target="https://javscriptscroll.netlify.app"
+                href="https://www.bookb33tju1c3.com/"
+                target="https://www.bookb33tju1c3.com/"
               >
                 <img className="pic" src={BeetJuice} />
               </a>
@@ -354,16 +354,16 @@ const MainSection = () => {
           <Boxes>
             <BoxTitle>
               <a
-                href="https://javscriptscroll.netlify.app"
-                target="https://javscriptscroll.netlify.app"
+                href="https://landing-pag-covid.netlify.app/"
+                target="https://landing-pag-covid.netlify.app/"
               >
                 Landing Page
               </a>
             </BoxTitle>
             <BoxBottom>
               <a
-                href="https://javscriptscroll.netlify.app"
-                target="https://javscriptscroll.netlify.app"
+                href="https://landing-pag-covid.netlify.app/"
+                target="https://landing-pag-covid.netlify.app/"
               >
                 <img className="pic" src={CovidSite} />
               </a>
