@@ -336,16 +336,16 @@ const MainSection = () => {
           <Boxes>
             <BoxTitle>
               <a
-                href="git@github.com:Danfirech/covid-landingpage.git"
-                target="git@github.com:Danfirech/covid-landingpage.git"
+                href="https://telahealth-portal.netlify.app/"
+                target="https://telahealth-portal.netlify.app/"
               >
                 Telehealth Portal
               </a>
             </BoxTitle>
             <BoxBottom>
               <a
-                href="https://javscriptscroll.netlify.app"
-                target="https://javscriptscroll.netlify.app"
+                href="https://telahealth-portal.netlify.app/"
+                target="https://telahealth-portal.netlify.app/"
               >
                 <img className="pic" src={TeleHealth} />
               </a>
