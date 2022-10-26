@@ -220,7 +220,7 @@ const Boxes = styled.div`
 `;
 
 const BoxTitle = styled.div`
-  height: 33%;
+  height: 40%;
   width: 100%;
   background-color: white;
   display: flex;
@@ -236,7 +236,7 @@ const BoxTitle = styled.div`
 `;
 
 const BoxBottom = styled.div`
-  height: 67%;
+  height: 60%;
   width: 100%;
   background-color: white;
   border-top: 1px solid #cccccc;
@@ -266,7 +266,7 @@ const MainSection = () => {
     <>
       <Header>
         <HeaderLeft>
-          <div>I'm Dan! Nice to Meet you!</div>
+          <div>I'm Dan! Nice to meet you!</div>
         </HeaderLeft>
         <HeaderRight>
           <a
@@ -338,16 +338,16 @@ const MainSection = () => {
           <Boxes>
             <BoxTitle>
               <a
-                href="https://frabjous-semifreddo-92e076.netlify.app/"
-                target="https://frabjous-semifreddo-92e076.netlify.app/"
+                href="https://toastwebdesign.netlify.app"
+                target="https://toastwebdesign.netlify.app"
               >
                 Toast Web Design
               </a>
             </BoxTitle>
             <BoxBottom>
               <a
-                href="https://frabjous-semifreddo-92e076.netlify.app/"
-                target="https://frabjous-semifreddo-92e076.netlify.app/"
+                href="https://toastwebdesign.netlify.app"
+                target="https://toastwebdesign.netlify.app"
               >
                 <img className="pic" src={Toast} />
               </a>
@@ -356,16 +356,16 @@ const MainSection = () => {
           <Boxes>
             <BoxTitle>
               <a
-                href="https://thunderous-baklava-327e9e.netlify.app/"
-                target="https://thunderous-baklava-327e9e.netlify.app/"
+                href="citrusandsage.netlify.app"
+                target="citrusandsage.netlify.app"
               >
                 Citrus&Sage
               </a>
             </BoxTitle>
             <BoxBottom>
               <a
-                href="https://thunderous-baklava-327e9e.netlify.app/"
-                target="https://thunderous-baklava-327e9e.netlify.app/"
+                href="citrusandsage.netlify.app"
+                target="citrusandsage.netlify.app"
               >
                 <img className="pic" src={CitrusSage} />
               </a>
