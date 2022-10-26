@@ -7,8 +7,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import StockPhotoTest from "../media/StockPhotoTest.png";
 import CopyrightIcon from "@mui/icons-material/Copyright";
 import BeetJuice from "../media/beetJuice.png";
-import TeleHealth from "../media/telehealth.png";
-import CovidSite from "../media/covidsite.png";
+import Toast from "../media/toast.png";
+import CitrusSage from "../media/citrus&sage.png";
+import SA from "../media/SA.png";
 
 const Header = styled.div`
   height: 80px;
@@ -203,12 +204,13 @@ const MiddleBottom = styled.div`
 `;
 
 const Boxes = styled.div`
-  height: 55%;
-  width: 19%;
+  height: 75%;
+  width: 24%;
   background-color: white;
-  margin-left: 7%;
-  margin-right: 7%;
-  border: 2px solid #cccccc;
+  margin-left: 3%;
+  margin-right: 3%;
+  border: 3px solid #cccccc;
+  outline: 3px solid #016c8c;
   border-radius: 5px;
 
   @media (max-width: 1068px) {
@@ -339,33 +341,51 @@ const MainSection = () => {
                 href="https://frabjous-semifreddo-92e076.netlify.app/"
                 target="https://frabjous-semifreddo-92e076.netlify.app/"
               >
-                Toast Web Design and Automation
+                Toast Web Design
               </a>
             </BoxTitle>
             <BoxBottom>
               <a
-                href="https://telahealth-portal.netlify.app/"
-                target="https://telahealth-portal.netlify.app/"
+                href="https://frabjous-semifreddo-92e076.netlify.app/"
+                target="https://frabjous-semifreddo-92e076.netlify.app/"
               >
-                <img className="pic" src={TeleHealth} />
+                <img className="pic" src={Toast} />
               </a>
             </BoxBottom>
           </Boxes>
           <Boxes>
             <BoxTitle>
               <a
-                href="https://landing-pag-covid.netlify.app/"
-                target="https://landing-pag-covid.netlify.app/"
+                href="https://thunderous-baklava-327e9e.netlify.app/"
+                target="https://thunderous-baklava-327e9e.netlify.app/"
               >
-                Landing Page
+                Citrus&Sage
               </a>
             </BoxTitle>
             <BoxBottom>
               <a
-                href="https://landing-pag-covid.netlify.app/"
-                target="https://landing-pag-covid.netlify.app/"
+                href="https://thunderous-baklava-327e9e.netlify.app/"
+                target="https://thunderous-baklava-327e9e.netlify.app/"
               >
-                <img className="pic" src={CovidSite} />
+                <img className="pic" src={CitrusSage} />
+              </a>
+            </BoxBottom>
+          </Boxes>
+          <Boxes>
+            <BoxTitle>
+              <a
+                href="https://thunderous-baklava-327e9e.netlify.app/"
+                target="https://thunderous-baklava-327e9e.netlify.app/"
+              >
+                Southern Adirondack
+              </a>
+            </BoxTitle>
+            <BoxBottom>
+              <a
+                href="https://southernadirondackmidwifery.com/"
+                target="https://southernadirondackmidwifery.com/"
+              >
+                <img className="pic" src={SA} />
               </a>
             </BoxBottom>
           </Boxes>
