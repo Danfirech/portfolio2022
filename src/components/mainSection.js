@@ -356,16 +356,16 @@ const MainSection = () => {
           <Boxes>
             <BoxTitle>
               <a
-                href="citrusandsage.netlify.app"
-                target="citrusandsage.netlify.app"
+                href="https://citrusandsage.netlify.app"
+                target="https://citrusandsage.netlify.app"
               >
                 Citrus&Sage
               </a>
             </BoxTitle>
             <BoxBottom>
               <a
-                href="citrusandsage.netlify.app"
-                target="citrusandsage.netlify.app"
+                href="https://citrusandsage.netlify.app"
+                target="https://citrusandsage.netlify.app"
               >
                 <img className="pic" src={CitrusSage} />
               </a>
