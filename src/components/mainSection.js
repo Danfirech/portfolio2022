@@ -204,7 +204,7 @@ const MiddleBottom = styled.div`
 `;
 
 const Boxes = styled.div`
-  height: 75%;
+  height: 400px;
   width: 18%;
   background-color: white;
   margin-left: 3%;
