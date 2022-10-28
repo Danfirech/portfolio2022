@@ -205,12 +205,14 @@ const MiddleBottom = styled.div`
 
 const Boxes = styled.div`
   height: 75%;
-  width: 24%;
+  width: 18%;
   background-color: white;
   margin-left: 3%;
   margin-right: 3%;
-  border: 3px solid #cccccc;
-  outline: 3px solid #016c8c;
+  border: 1px solid black;
+  box-shadow: 5px 10px #d3d3d3;
+  /* border: 3px solid #cccccc;
+  outline: 3px solid #016c8c; */
   border-radius: 5px;
 
   @media (max-width: 1068px) {
@@ -220,7 +222,7 @@ const Boxes = styled.div`
 `;
 
 const BoxTitle = styled.div`
-  height: 40%;
+  height: 45%;
   width: 100%;
   background-color: white;
   display: flex;
@@ -236,7 +238,7 @@ const BoxTitle = styled.div`
 `;
 
 const BoxBottom = styled.div`
-  height: 60%;
+  height: 55%;
   width: 100%;
   background-color: white;
   border-top: 1px solid #cccccc;
