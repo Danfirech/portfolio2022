@@ -376,8 +376,8 @@ const MainSection = () => {
           <Boxes>
             <BoxTitle>
               <a
-                href="https://thunderous-baklava-327e9e.netlify.app/"
-                target="https://thunderous-baklava-327e9e.netlify.app/"
+                href="https://southernadirondackmidwifery.com/"
+                target="https://southernadirondackmidwifery.com/"
               >
                 Southern Adirondack
               </a>
